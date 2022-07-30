@@ -9,7 +9,7 @@ actresses that star in the film. The user can continue to use the application un
 
 ##Technologies Used
 
-SQL, Java
+mySQL, Java, BASH
 
 ##What I learned
 This was the first project I had to complete that uses a database in order to create objects. I was able to get familiar with the particular keywords
