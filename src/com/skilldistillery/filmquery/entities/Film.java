@@ -165,10 +165,20 @@ public class Film {
 
 	@Override
 	public String toString() {
+
 		return "Film [filmId=" + filmId + ", title=" + title + ", description=" + description + ", year=" + year
 				+ ", language=" + language + ", rentalDuration=" + rentalDuration + ", rentalrate=" + rentalrate
 				+ ", length=" + length + ", replacementCost=" + replacementCost + ", rating=" + rating
 				+ ", specialFeatures=" + specialFeatures + ", actorsInFilm=" + actorsInFilm + "]";
+	}
+
+	public String filmInfo() {
+
+		String actorsString = actorsInFilm.toString().replace("[", "").replace("]", "");
+
+		return title + " was released in " + year + ".\n\nIt has a rating of: " + rating
+				+ ".\n\nHere is a breif description: " + description + ".\n\nIt is available in: " + language
+				+ ".\n\nThe actors starring in the film are listed below:" + actorsString;
 	}
 
 }
